@@ -9,6 +9,8 @@ def right():
 def wrong():
     pin0.write_digital(0)
 
+display.off()
+
 while True:
     if accelerometer.is_gesture("down"):
         sleep(500)
