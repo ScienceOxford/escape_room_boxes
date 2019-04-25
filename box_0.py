@@ -10,8 +10,9 @@ def wrong():
    pin0.write_digital(0)
 
 while True:
-    inp = pin1.read_analog()
-    if inp > 100:
-        wrong()
-    else:
+    inp = pin1.read_digital()
+    if inp == 1:
+        sleep(500)
         right()
+    else:
+        wrong()
