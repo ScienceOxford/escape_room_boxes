@@ -13,7 +13,7 @@ while True:
     inp1 = pin1.read_digital()
     inp2 = pin2.read_digital()
     inp3 = pin8.read_digital()
-    inp4 = pin12.read_digital()
+    inp4 = pin16.read_digital()
     if inp1 == 1 and inp2 == 0 and inp3 == 1 and inp4 == 0:
         sleep(500)
         right()
