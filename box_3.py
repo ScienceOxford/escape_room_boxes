@@ -9,6 +9,8 @@ def right():
 def wrong():
     pin0.write_digital(0)
 
+display.off()
+
 while True:
     inp = pin1.read_analog()
     if 233 < inp < 253:
