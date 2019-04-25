@@ -9,6 +9,8 @@ def right():
 def wrong():
    pin0.write_digital(0)
 
+display.off()
+
 while True:
     inp1 = pin1.read_digital()
     inp2 = pin2.read_digital()
