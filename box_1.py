@@ -18,6 +18,7 @@ while True:
     inp4 = pin16.read_digital()
     if inp1 == 1 and inp2 == 0 and inp3 == 1 and inp4 == 0:
         sleep(500)
-        right()
+        if inp1 == 1 and inp2 == 0 and inp3 == 1 and inp4 == 0:
+            right()
     else:
         wrong()
