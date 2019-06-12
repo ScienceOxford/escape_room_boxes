@@ -13,7 +13,7 @@ display.off()
 
 while True:
     if accelerometer.is_gesture("left"):
-        sleep(500)
-        right()
+        sleep(1000) # the accelerometer doesn't allow us to use the same tactic as the other boxes for checking for a decision
+        right()     # so instead, I have added a longer wait time, so you must keep it on the correct side for longer to be sure
     else:
         wrong()
