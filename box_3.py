@@ -13,8 +13,9 @@ display.off()
 
 while True:
     inp = pin1.read_analog()
-    if 233 < inp < 253:
+    if 300 < inp < 400:
         sleep(500)
-        right()
+        if 300 < inp < 400:
+            right()
     else:
         wrong()
