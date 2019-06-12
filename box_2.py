@@ -12,7 +12,7 @@ def wrong():
 display.off()
 
 while True:
-    if accelerometer.is_gesture("down"):
+    if accelerometer.is_gesture("left"):
         sleep(500)
         right()
     else:
