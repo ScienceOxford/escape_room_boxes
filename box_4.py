@@ -22,8 +22,14 @@ while True:
     red.write_analog(inp1)
     green.write_analog(inp2)
     blue.write_analog(inp3)
-    if (0 < inp1 < 20) and (500 < inp2 < 520) and (500 < inp3 < 520):
+    
+    if (0 < inp1 < 20) and (300 < inp2 < 500) and (300 < inp3 < 500):
         sleep(500)
-        right()
+        inp1 = pin3.read_analog()
+        inp2 = pin4.read_analog()
+        inp3 = pin10.read_analog()
+        
+        if (0 < inp1 < 20) and (300 < inp2 < 500) and (300 < inp3 < 500):
+            right()
     else:
         wrong()
