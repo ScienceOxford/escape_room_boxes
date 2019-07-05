@@ -9,11 +9,14 @@ def right():
 def wrong():
     pin0.write_digital(0)
 
-display.off()
+correct = False
 
 while True:
+    print(correct)
     if accelerometer.is_gesture("left"):
-        sleep(1000) # the accelerometer doesn't allow us to use the same tactic as the other boxes for checking for a decision
-        right()     # so instead, I have added a longer wait time, so you must keep it on the correct side for longer to be sure
+        sleep(500)
+        correct = True
+    if accelerometer.is_gesture('face up') and correct == True:
+        right()
     else:
         wrong()
